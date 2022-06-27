@@ -1,0 +1,146 @@
+<nav class="row navbar navbar-dark bg-dark fixed-top">
+    <div class="col-4 container-admin">
+        <img id="navbar-img" src="/images/Logo.png" alt="Logo">
+        <p id="navbar-admin">: Administrador</p>
+    </div>
+    <div class="col-8 container-user">
+        <p id="navbar-user">Hola {{usuario}} </p>
+        <a href="#" class="btb btn-success close-btn">Salir<i class='bx bx-exit'></i></a>
+    </div>
+</nav>
+{{!-- Inicio Noticias --}}
+<section class="container-fluid container-noticias">
+    <div class="row container-titulo">
+        <div class="col-9 noticias-titulo">
+            <p>LISTADO DE NOTICIAS</p>
+        </div>
+        <div class="col-3 noticias-btn">
+            <a href="/admin/admin/agregarNoticias" class="btb btn-success add-btn"><i class='bx bx-plus'></i> Nuevo</a>
+        </div>
+    </div>
+    {{!-- Inicio tabla --}}
+    <div class="row container-tabla">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col" class="col-1">#</th>
+                        <th scope="col" class="col-6 col-sm-8 col-lg-9">Título</th>
+                        <th scope="col" class="col-4 col-sm-2 col-lg-1 text-right">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each noticias}}
+                    <tr class="container-datos">
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td class="btn-datos text-right">
+                            <a href="/admin/admin/modificarNoticias/{{id}}" class="btn btn-secundary"><i
+                                    class='bx bx-pencil'></i></a>
+                            <a href="/admin/admin/eliminarNoticias/{{id}}" class="btn btn-secundary"><i
+                                    class='bx bx-trash'></i></a>
+                        </td>
+                        {{/each}}
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{{!-- Inicio Imagenes --}}
+<section class="container-fluid container-noticias">
+    <div class="row container-titulo">
+        <div class="col-12 noticias-titulo">
+            <p>LISTADO DE IMÁGENES</p>
+        </div>
+    </div>
+    {{!-- Inicio tabla digitalizados--}}
+    <div class="row container-tabla">
+        <div class="col-6">
+            <div class="row container-subtitulo">
+                <div class="col-9 noticias-titulo noticias-subtitulo">
+                    <p>Galería Digitalizados</p>
+                </div>
+                <div class="col-3 noticias-btn">
+                    <a href="/admin/admin/agregarGaleria" class="btb btn-success add-btn"><i class='bx bx-plus'></i>
+                        Nuevo</a>
+                </div>
+            </div>
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col" class="col-1">#</th>
+                            <th scope="col" class="col-6 col-sm-5 col-lg-6">Título</th>
+                            <th scope="col" class="col-6 col-sm-3 col-lg-3">Imagen</th>
+                            <th scope="col" class="col-4 col-sm-2 col-lg-1 text-right">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each galeria}}
+                        <tr class="container-datos">
+                            <th scope="row">{{id}}</th>
+                            <td scope="row">{{titulo}}</td>
+                            <td>{{{imagen}}}</td>
+                            <td class="btn-datos text-right">
+                                <a href="/admin/admin/modificarImagen/{{id}}" class="btn btn-secundary"><i
+                                        class='bx bx-pencil'></i></a>
+                                <a href="/admin/admin/eliminarImagen/{{id}}" class="btn btn-secundary"><i
+                                        class='bx bx-trash'></i></a>
+                            </td>
+                            {{/each}}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {{!-- Inicio tabla Otras Técnicas --}}
+        <div class="col-6">
+            <div class="row container-subtitulo">
+                <div class="col-9 noticias-titulo noticias-subtitulo">
+                    <p>Galería Otras Técnicas</p>
+                </div>
+                <div class="col-3 noticias-btn">
+                    <a href="/admin/admin/agregarGaleria2" class="btb btn-success add-btn"><i class='bx bx-plus'></i>
+                        Nuevo</a>
+                </div>
+            </div>
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col" class="col-1">#</th>
+                            <th scope="col" class="col-6 col-sm-5 col-lg-6">Título</th>
+                            <th scope="col" class="col-6 col-sm-3 col-lg-3">Imagen</th>
+                            <th scope="col" class="col-4 col-sm-2 col-lg-1 text-right">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each galeria2}}
+                        <tr class="container-datos">
+                            <th scope="row">{{id}}</th>
+                            <td scope="row">{{titulo}}</td>
+                            <td>{{{imagen}}}</td>
+                            <td class="btn-datos text-right">
+                                <a href="/admin/admin/modificarImagen2/{{id}}" class="btn btn-secundary"><i
+                                        class='bx bx-pencil'></i></a>
+                                <a href="/admin/admin/eliminarImagen2/{{id}}" class="btn btn-secundary"><i
+                                        class='bx bx-trash'></i></a>
+                            </td>
+                            {{/each}}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="container-fluid bg-dark text-center text-white container-footer">
+    <!-- Copyright -->
+    <div class="container-copy">
+        <p class="copy">© 2022 Copyright: Powell Designs / (5186) Alta Gracia - Córdoba - Argentina</p>
+    </div>
+</footer>

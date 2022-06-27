@@ -1,0 +1,37 @@
+<article class="container-login container-fluid g-0">
+    <div class="container-fluid container-log col-9 col-sm-7 col-md-5 col-lg-3 g-0">
+        <div class="row">
+            <div class="col-12">
+                <form class="row login-columns" action="/admin/login" method="post">
+                    <div class="col-12 form-imagen">
+                        <img src="/images/Logo.png" alt="">
+                    </div>
+                    <div class="col-12 form-login">
+                        <div class="row">
+                            <label for="inputEmail3" class="col-12 col-form-label">Usuario</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="inputEmail3" name="usuario">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 form-login">
+                        <div class="row">
+                            <label for="inputPassword3" class="col-12 col-form-label">Password</label>
+                            <div class="col-12">
+                                <input type="password" class="form-control" id="inputPassword3" name="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 form-login">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 form-login">
+                {{#if error}}
+                <p>Usuario o contraseña incorrecto</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</article>

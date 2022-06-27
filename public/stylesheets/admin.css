@@ -1,0 +1,284 @@
+/*font-family: 'Montserrat', sans-serif;*/
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Login */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/Login.jpg);
+    background-size: cover;
+}
+
+.container-log {
+    outline: none;
+    border: none;
+    color: #e0d2d2;
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    border-radius: 8px;
+    background: rgba(105, 105, 105, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-columns {
+    height: 100%;
+}
+
+.form-imagen img {
+    width: 100%;
+}
+
+.form-login {
+    margin: 10px 0;
+    color: black;
+}
+
+.form-login button {
+    background-color: orange;
+    border: none;
+}
+
+/* NOTICIAS */
+/* Navbar */
+.container-admin {
+    display: flex;
+    align-items: center ;
+    padding: 0 20px 0 30px;
+    flex-wrap: wrap;
+}
+
+#navbar-img {
+    height: 30px;
+}
+
+#navbar-admin {
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+    margin: 0 0 0 10px;
+}
+
+.container-user {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.close-btn {
+    color: white;
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-user {
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+    margin: 0 30px;
+}
+
+/* Seccion Noticias */
+/* Titulo */
+.container-noticias{
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.container-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.noticias-titulo, .noticias-btn{
+    padding: 0;
+}
+
+.noticias-btn{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+}
+
+.noticias-btn a{
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.noticias-titulo p{
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+}   
+.container-tabla{
+    padding: 10px;
+}
+
+.container-subtitulo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.noticias-subtitulo {
+ margin: 10px 0;
+}
+
+.add-btn{
+    font-size: 0.8rem;
+    background-color: green;
+    border: none;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+/* Formulario */
+.container-form{
+    margin: 100px auto;
+    padding: 30px;
+}
+
+.container-tituloForm{
+    background-color: orange;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form-titulo{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.separador{
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.form-subtitulo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form-group{
+    margin: 10px 0;
+}
+
+.add-form{
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    width: 5rem;
+    text-align: center;
+}
+
+.close-form{
+    color: white;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    width: 5rem;
+    text-align: center;
+}
+
+/* Tablas */
+.text-right{
+    text-align: right;
+}
+.btn-datos a{
+    background-color: gray;
+    color: white;
+    height: 2.2rem;
+    width: 2.2rem;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 0;
+}
+
+/* Footer */
+.container-footer {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container-copy {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.8rem;
+    height: 40px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    margin: auto;
+    line-height: 1;
+    color: white;
+}

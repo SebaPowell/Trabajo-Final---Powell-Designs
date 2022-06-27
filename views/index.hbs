@@ -1,0 +1,489 @@
+<header class="container-fluid container-nav g-0">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img id="navbar-img" src="images/Logo.png" alt="Logo">
+            <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img class="offcanvas-imagen" id="offcanvasNavbarLabel" src="images/Logo.png" alt="Logo">
+                    <button type="button" id="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class='bx bx-exit'></i></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Información
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#noticias">Noticias</a></li>
+                                <li><a class="dropdown-item" href="#info">Técnicas de Ilustración</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown2">
+                                <li><a class="dropdown-item" href="#digitalizados">Digitalización</a></li>
+                                <li><a class="dropdown-item" href="#otros">Técnicas Tradicional</a></li>
+                                <li><a class="dropdown-item" href="#diseno">Diseño Gráfico</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section>
+        <a name="home" class="links-ref"></a>
+        <article class="container-fluid bio g-0">
+            <div class="row bio-contenido g-0">
+                <div class="col-12 col-md-5 parrafo">
+                    <h1>HOLA </h1>
+                    <p>Mi nombre es Sebastián Powell, soy Diseñador Gráfico e ilustrador autodidacta. Desde que
+                        recuerdo
+                        he dibujado cada vez que encontraba un lugar donde hacerlo, hojas, paredes, los bancos del
+                        cole
+                        y la facu, etc. Hasta que hace no mucho tomé coraje y compré una tableta gráfica y así
+                        empecé
+                        con la digitalización en Photoshop. Luego pasé a digitalizar en una Tablet y probando apps
+                        logré
+                        realizar algunos de los trabajos que podrán ver si recorren esta página.</p>
+                    <p class="parrafofinal">Y como diría un amigo, ENJOY!!!</p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img class="img-fluid img-bio" src="images/PowellDesignsLogo.png" alt="">
+                </div>
+            </div>
+        </article>
+        <div class="home-icon">
+            <a class="nav-link" aria-current="page" href="#home"><i class='bx bx-up-arrow-circle icon-item'></i></a>
+        </div>
+        <!-- Intro Acordion -->
+        <a name="noticias" class="links-ref"></a>
+        <article class="container-fluid container-accordion">
+            {{#each noticias}}
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-heading{{id}}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse{{id}}" aria-expanded="false"
+                            aria-controls="flush-collapse{{id}}">
+                            {{titulo}}
+                        </button>
+                    </h2>
+                    <div id="flush-collapse{{id}}" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading{{id}}" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">{{texto}}</div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </article>
+        <!-- Info tipos de ilustraciones -->
+        <a name="info" class="links-ref"></a>
+        <article class="container-fluid container-cards">
+            <div class="row card-row g-0">
+                <div class="col-12 col-md-4 card">
+                    <img src="images/IMG_20201113_143536.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>Ilustración tradicional:</b> es el tipo “clásico” de ilustración, en
+                            el
+                            que
+                            se dibuja y pinta a mano.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 card">
+                    <img src="images/IMG_20201108_205406.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>Ilustración digital:</b> la ilustración digital, en cambio, usa las
+                            nuevas
+                            tecnologías (a través de diferentes tipos de software) para la producción de imágenes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 card">
+                    <img src="images/MergerTarjeta.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>Diseño gráfico:</b> Actividad creativa y técnica que consiste en
+                            transmitir
+                            ideas por medio de imágenes, en especial en libros, carteles y folletos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Portfolio -->
+        <section class="container-fluid portfolio g-0">
+            <!-- Galeria Digital -->
+            <a name="digitalizados" class="links-ref"></a>
+            <article class="row container-fluid container-gallery g-0">
+                <div class="col-12 intro">
+                    <h2 class="text-center titulo">Galería de trabajos digitalizados</h2>
+                    <p class="text-center">Realizados con tableta gráfica con Adobe Photoshop y con Tablet con
+                        Autodesk Sketchbook. </p>
+                </div>
+                <!-- Card -->
+                <div class="col-12 container-images g-0">
+                    <div class="row card-group g-0">
+                        {{#each galeria}}
+                        <div class="col-6 col-md-3 col-xl-2 card-gallery">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#imagen{{id}}"><img src="{{imagen}}"
+                                    class="card-img-top img-fluid rounded" alt="{{titulo}}"></a>
+
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagen{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <img src="{{imagen}}" class="img-fluid rounded" alt="{{titulo}}">
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+            </article>
+            <!-- Galeria lapiz -->
+            <a name="otros" class="links-ref"></a>
+            <article class="row container-fluid container-gallery g-0">
+                <div class="col-12 intro">
+                    <h2 class="text-center titulo">Galería de trabajos en lápiz, tinta y distintas pinturas</h2>
+                    <p class="text-center">Realizados a mano en lápiz y tinta, lapicera o marcador, en
+                        soporte papel. Algunos de ellos están pintados con marcadores, acuarelas y lápices
+                        de colores.</p>
+                </div>
+                <!-- Card -->
+                <div class="col-12 container-images g-0">
+                    <div class="row card-group g-0">
+                        {{#each galeria2}}
+                        <div class="col-6 col-md-3 col-xl-2 card-gallery">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#imagen{{id}}"><img src="{{imagen}}"
+                                    class="card-img-top img-fluid rounded" alt="{{titulo}}"></a>
+
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagen{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <img src="{{imagen}}" class="img-fluid rounded" alt="{{titulo}}">
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+            </article>
+            <!-- Carrusel -->
+            <a name="diseno" class="links-ref"></a>
+            <article class="row container-fluid container-carousel g-3">
+                <div class="col-12 intro">
+                    <h2 class="text-center titulo">Diseño Gráfico</h2>
+                    <p class="text-center">Trabajos de diseño gráfico, realizados en Adobe Illustrator y Adobe
+                        Photoshop</p>
+                </div>
+                <div class="col-12 col-md-4 g-0 carousel-columns">
+                    <!-- Isologotipos -->
+                    <div id="carouselExampleIndicators" class="carousel carousel-dr slide " data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-titulo">Isologotipos</div>
+                            <div class="carousel-item active">
+                                <img src="images/Diseño/PowellDesigns-Logo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/PowellDesigns-Icon.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/Don Cyberio -Logo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/MergerLogo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/ElClan-Logo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/GustyLogoNuevo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/MP-Logo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/Torres del Boulevard Final OK.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Tarjetas -->
+                <div class="col-12 col-md-4 g-0 carousel-columns">
+                    <div id="carouselExampleIndicators2" class="carousel carousel-dr slide " data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-titulo">Tarjetas</div>
+                            <div class="carousel-item active">
+                                <img src="images/Diseño/MillyPowell-TarjetasPres.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/GustyTarjeta-Pres.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/MergerTarjeta.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/PabloAdamTarjeta.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/DulceSabor-Tarjeta.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Varios -->
+                <div class="col-12 col-md-4 g-0 carousel-columns">
+                    <div id="carouselExampleIndicators3" class="carousel carousel-dr slide " data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-titulo">Varios</div>
+                            <div class="carousel-item active">
+                                <img src="images/Diseño/FolletoTurco.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/Merger-Folletos01.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/Merger-Folletos02.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/SoulWave-Sticker.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/JazFolleto.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/La misionerita.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/MP-FolletoFace.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/Plano Alta Gracia 2010.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Diseño/Plano Alta Gracia 2011.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </article>
+        </section>
+    </section>
+</main>
+<a name="contacto" class="links-ref"></a>
+<footer class="container-fluid bg-dark text-center text-white container-footer">
+    <section class="row container-footercolumns g-0">
+        <!-- Footer Form -->
+        <article class="col-12 col-md-5 container-form g-0">
+            <form class="row needs-validation formulario container-contacto g-0" action="/" method="post">
+                <div class="col-12 links-titulo">
+                    <h4 class="col-12 titulo-link">FORMULARIO DE CONTACTO</h4>
+                </div>
+                <!-- Nombre -->
+                <div class="col-12 form-item">
+                    <label for="validationToolip01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required
+                        placeholder="Ingresa tu nombre" name="nombre">
+                </div>
+                <!-- Telefono -->
+                <div class="col-12 form-item">
+                    <label for="validationCustom02" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="validationCustom02" required value=""
+                        placeholder="Ingresar con código de área sin 0 y número sin 15" name="tel">
+                </div>
+                <!-- Textarea -->
+                <div class="col-12 form-item">
+                    <label for="validationTextarea" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Dejanos un breve comentario"
+                        value="" required name="mensaje"></textarea>
+                </div>
+                <!-- Boton -->
+                <div class="col-12 form-btn">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+            {{#if message}}
+            {{message}}
+            {{/if}}
+        </article>
+        <!-- Footer Aside -->
+        <article class="col-12 col-md-7 container container-form g-0">
+            <div class="row container-contacto g-0">
+                <!-- Footer Imagen -->
+                <div class="col-12 container-fluid footer-imagen g-0">
+                    <img src="images/footer.jpg" alt="" class="image-fluid">
+                </div>
+                <!-- Footer Links -->
+                <div class="col-6 container-fluid container-items">
+                    <div class="row container-links g-0">
+                        <div class="col-12 links-titulo">
+                            <h4 class="titulo-link">LINKS</h4>
+                        </div>
+                        <div class="col-12 container-list">
+                            <ul class="link-list">
+                                <li><a href="#" class="text-white">Home</a></li>
+                                <li><a href="#intro" class="text-white">Conceptos Básicos</a></li>
+                                <li><a href="#info" class="text-white">Técnicas de Ilustración</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 links-titulo">
+                            <h5 class="link-portfolio">PORTFOLIO</h5>
+                        </div>
+                        <div class="col-12 container-list">
+                            <ul class="link-list">
+                                <li><a href="#digitalizados" class="text-white">Digitalizados</a></li>
+                                <li><a href="#otros" class="text-white">Técnicas Tradicionales</a></li>
+                                <li><a href="#diseno" class="text-white">Diseño Gráfico</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- contacto -->
+                <div class="col-6 container-fluid container-items">
+                    <div class="row container-links g-0">
+                        <div class="col-12 links-titulo">
+                            <h4 class="titulo-link">CONTACTO</h4>
+                        </div>
+                        <!-- Datos -->
+                        <div class="col-12 container-list" id="datos-list">
+                            <ul class="link-list">
+                                <li><i class='bx bxs-home-smile'></i> Alta Gracia - Córdoba</li>
+                                <li><i class='bx bxl-whatsapp'></i> +54 9 3547 63 1210</li>
+                            </ul>
+                        </div>
+                        <!-- <p class="link-portfolio">REDES</p> -->
+                        <!-- Redes -->
+                        <div class="col-12 container-list" id="media-icons">
+                            <ul class="container-media">
+                                <!-- Mail -->
+                                <li><a class="btn btn-outline-light btn-floating btn-links"
+                                        href="mailto:seba.powell@gmail.com" role="button" target="_blank"><i
+                                            class='bx bxl-gmail'></i></a></li>
+                                <!-- Instagram -->
+                                <li><a class="btn btn-outline-light btn-floating btn-links"
+                                        href="https://www.instagram.com/powell.designs/" role="button"
+                                        target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <!-- Pinterest -->
+                                <li><a class="btn btn-outline-light btn-floating btn-links"
+                                        href="https://ar.pinterest.com/sebapowell/" role="button" target="_blank"><i
+                                            class='bx bxl-pinterest'></i></a></li>
+                                <!-- Github -->
+                                <li><a class="btn btn-outline-light btn-floating btn-links"
+                                        href="https://github.com/SebaPowell" role="button" target="_blank"><i
+                                            class='bx bxl-github'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Copyright -->
+    <div class="container-copy">
+        <p class="copy">© 2022 Copyright: Powell Designs / (5186) Alta Gracia - Córdoba - Argentina</p>
+    </div>
+
+</footer>
