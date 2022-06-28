@@ -9,6 +9,19 @@ var cloudinary = require('cloudinary').v2;
 var uploader = util.promisify(cloudinary.uploader.upload);
 const destroy = util.promisify(cloudinary.uploader.destroy);
 
+// Close
+router.get('/close', (req, res, next) => {
+  res.render('admin/login', {
+    layout: 'admin/layout'
+  })
+});
+
+router.post('/close', async (req, res, next) => {
+  res.render('admin/login', {
+    layout: 'admin/layout'
+})
+})
+
 // NOTICIAS
 /* Listado de noticias*/
 router.get('/', async function (req, res, next) {

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 27-06-2022 a las 19:54:38
+-- Tiempo de generación: 28-06-2022 a las 01:46:42
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -77,33 +77,34 @@ CREATE TABLE IF NOT EXISTS `galeria2` (
   `titulo` varchar(250) DEFAULT NULL,
   `imagen` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `galeria2`
 --
 
 INSERT INTO `galeria2` (`id`, `titulo`, `imagen`) VALUES
-(3, 'Cat Girl', 'pbgwwiuk0dwkamawrppx'),
-(1, 'Girl Face', 'ngrphyx484h3nhmpy9s0'),
-(4, 'Diablita', 'ysii6nyfkz6hhrhznglm'),
-(5, 'Darksiders', 'rub9dgjjkfgt4d4ixipe'),
-(6, 'Malefica', 'as4nqqw44vhllzmqtboy'),
-(7, 'Couple', 'aptiwlfaleughiw0v6xd'),
-(8, 'Caballo', 'g0zrxc1agj0ytwmlxsxc'),
-(9, 'Tattoo Girl', 'bzvfi0xecettfkwvhzqw'),
-(10, 'Red Head', 'gkcqum8jhk8ge8bwxxp9'),
-(11, 'Nirvana', 'ykawrly0hviohuoc6csu'),
-(12, 'Varios', 'ec6lpgla18lmo0aivpqg'),
-(13, 'Deadpool', 'syztqqnfv2cpe4yc99lz'),
-(14, 'Hellboy', 'qx3wlagyzv7l5usaxena'),
-(15, 'Poker Girl', 'nbomneqkydkggdcthwm4'),
-(16, 'Linkin Park', 'oqg3jnrfh2oyueodpvu7'),
-(17, 'Goku', 'ruie7m3so1swkukujkfd'),
-(18, 'Piccolo', 'tfjmqsyxa7cbmoya3ayi'),
-(19, 'India', 'vs77znmrqwwupegpp5ju'),
-(20, 'Varios', 'ck2anbxdkc8mnzjdzlye'),
-(21, 'Varios', 'ikgd0l1qp6ezusabgity');
+(25, 'Cat Girl', 'pbgwwiuk0dwkamawrppx'),
+(26, 'Girl Face', 'ngrphyx484h3nhmpy9s0'),
+(27, 'Diablita', 'ysii6nyfkz6hhrhznglm'),
+(28, 'Darksiders', 'rub9dgjjkfgt4d4ixipe'),
+(29, 'Malefica', 'as4nqqw44vhllzmqtboy'),
+(30, 'Couple', 'aptiwlfaleughiw0v6xd'),
+(31, 'Caballo', 'g0zrxc1agj0ytwmlxsxc'),
+(32, 'Tattoo Girl', 'bzvfi0xecettfkwvhzqw'),
+(33, 'Red Head', 'gkcqum8jhk8ge8bwxxp9'),
+(34, 'Nirvana', 'ykawrly0hviohuoc6csu'),
+(35, 'Varios', 'ec6lpgla18lmo0aivpqg'),
+(36, 'Deadpool', 'syztqqnfv2cpe4yc99lz'),
+(37, 'Hellboy', 'qx3wlagyzv7l5usaxena'),
+(38, 'Poker Girl', 'nbomneqkydkggdcthwm4'),
+(39, 'Linkin Park', 'oqg3jnrfh2oyueodpvu7'),
+(40, 'Goku', 'ruie7m3so1swkukujkfd'),
+(41, 'Piccolo', 'tfjmqsyxa7cbmoya3ayi'),
+(42, 'India', 'vs77znmrqwwupegpp5ju'),
+(43, 'Varios', 'ck2anbxdkc8mnzjdzlye'),
+(44, 'Varios', 'ikgd0l1qp6ezusabgity'),
+(45, 'Poker Girl', 'nbomneqkydkggdcthwm4');
 
 -- --------------------------------------------------------
 
@@ -117,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `noticias` (
   `titulo` varchar(250) NOT NULL,
   `texto` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `noticias`
